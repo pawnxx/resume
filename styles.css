@@ -1,0 +1,233 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4em;
+  color: #0f141e;
+  background: #f1f1f1;
+}
+
+h2,
+h1,
+h4 {
+  font-family: inherit;
+  color: #383838;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.avatar {
+  border-radius: 10%;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.45);
+  width: 220px;
+}
+
+.info {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.info-text {
+  margin-left: 30px;
+}
+
+@media (max-width: 650px) {
+  .info-text {
+    margin-left: 0px;
+  }
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #5d6a85;
+  margin: 1px;
+}
+
+.info-text h1 {
+  border-bottom: 1.5px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.info-text h4 {
+  margin-bottom: 9px;
+}
+
+.info-text a {
+  color: rgb(7, 94, 94);
+  text-decoration: none;
+}
+
+.info-text a:active {
+  color: rgb(165, 21, 184);
+}
+
+.info-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+}
+
+.card {
+  border-radius: 21px;
+  /* padding: 5px 20px; */
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.bg-cyan {
+  border: 2px solid rgba(2, 167, 167, 0.685);
+  background: linear-gradient(
+      217deg,
+      rgba(67, 182, 163, 0.829),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(105, 206, 231, 0.26),
+      rgba(0, 255, 0, 0) 50.71%
+    ),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.575), rgba(0, 0, 255, 0) 70.71%);
+  /* background-color: rgba(139, 227, 243, 0.13); */
+}
+
+.bg-purple {
+  border: 2px solid rgba(42, 0, 139, 0.473);
+  background: linear-gradient(
+      217deg,
+      rgba(231, 233, 95, 0.829),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(154, 105, 231, 0.541),
+      rgba(0, 255, 0, 0) 50.71%
+    ),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.btn {
+  background: linear-gradient(
+      217deg,
+      rgba(15, 58, 51, 0.829),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(105, 206, 231, 0.623),
+      rgba(0, 255, 0, 0) 50.71%
+    ),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.404), rgba(0, 0, 255, 0) 70.71%);
+  border-width: 1px;
+  padding: 3px 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  font-size: 105%;
+}
+
+.list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.list li {
+  color: #5f3ac7;
+  margin-bottom: 3px;
+}
+
+.table {
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.table td {
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.table td:nth-child(1) {
+  color: rgb(12, 109, 109);
+  padding: 0 0 0 20px;
+}
+
+@media (max-width: 650px) {
+  .table {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+/* .form h2 {
+  text-align: center;
+} */
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-row .form-group {
+  margin-right: 20px;
+  width: 50%;
+  /* width: calc(50% - 20px); */
+  /* display: inline-block; */
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 650px) {
+  .form-row {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .form-row .form-group {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #1c1b1f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 10px 0px 10px;
+  outline: none;
+  font-family: inherit;
+}

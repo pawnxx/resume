@@ -7,88 +7,95 @@
     <meta name="keywords" content="ivan, cv, resume" />
     <meta name="description" content="Этот сайт - резюме Иван П" />
     <title>Ivan Resume</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img src="avatar1.jpg" width="230" alt="Фото Ивана" />
+    <div class="container">
+      <div class="info">
+        <img src="avatar1.jpg" alt="Фото Ивана" class="avatar" />
 
-    <h1>Иван Покручин</h1>
+        <div class="info-text">
+          <h1>Иван Покручин</h1>
 
-    <p>
-      Я учился 4 года в <strong>ЮРГПУ НПИ</strong> на кафедре
-      <strong>МОАИС</strong>
-    </p>
+          <p>Я учился 4 года в ЮРГПУ НПИ на кафедре МОАИС</p>
 
-    <p>Я люблю <em> играть в Pummel Party и смотреть видосики с Youtube</em></p>
+          <p>Я люблю играть в Pummel Party и смотреть видосики с Youtube</p>
 
-    <h2>Мои хобби</h2>
+          <h4>Список социальных сетей:</h4>
 
-    <ol>
-      <li>
-        Игры:
-        <ul>
-          <li>Chess</li>
-          <li>Pummel Party</li>
-          <li>Move or die</li>
-        </ul>
-      </li>
-      <li>Путешествия</li>
-    </ol>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Название</th>
-          <th>Должность</th>
-          <th>Год</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Дотер</td>
-          <td>Роумер</td>
-          <td>2010 - 2019</td>
-        </tr>
-        <td>Gambler</td>
-        <td>Forkman</td>
-        <td>2019 - 2022</td>
-        <tr>
-          <td>Result.School</td>
-          <td>Ученик</td>
-          <td>2022 - сейчас</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <h3>Как со мной связаться:</h3>
-
-    <a href="https://t.me/phxstar" target="_blank">Telegram</a>
-    |
-    <a
-      href="https://steamcommunity.com/profiles/76561198346392529/"
-      target="_blank"
-      >Steam</a
-    >
-
-    <h3>Связаться со мной</h3>
-
-    <form>
-      <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя" />
+          <a href="https://t.me/phxstar" target="_blank">Telegram</a>
+          |
+          <a
+            href="https://steamcommunity.com/profiles/76561198346392529/"
+            target="_blank"
+            >Steam</a
+          >
+          |
+          <a
+            href="https://www.youtube.com/channel/UCq8wCxSCYHwuX0Otkrha8Zw"
+            target="_blank"
+            >Youtube</a
+          >
+        </div>
       </div>
 
-      <div>
-        <label for="email">Ваше e-mail:</label>
-        <input type="email" id="email" placeholder="Введите e-mail" />
+      <div class="card bg-purple">
+        <h2>МОИ ХОББИ</h2>
+
+        <ol class="list">
+          <li>Игры</li>
+          <li>Путешествия</li>
+          <li>Программирование</li>
+        </ol>
       </div>
 
-      <div>
-        <label for="message">Ваше сообщение</label>
-        <br />
-        <textarea id="message" cols="30" rows="6" placeholder="Введите сообщение..."></textarea>
+      <div class="card bg-cyan">
+        <h2>УВЛЕЧЕНИЯ</h2>
+
+        <table class="table">
+          <tr>
+            <td>Dota player</td>
+            <td>Roam</td>
+            <td>2010 - 2019</td>
+          </tr>
+          <td>Gambler</td>
+          <td>Forkman</td>
+          <td>2019 - 2022</td>
+          <tr>
+            <td>Result.School</td>
+            <td>Student</td>
+            <td>2022 - Now</td>
+          </tr>
+        </table>
       </div>
 
-      <button type="submit">Отправить</button>
-    </form>
+      <form action="/" class="form">
+        <h2>СВЯЗАТЬСЯ СО МНОЙ</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваше e-mail:</label>
+            <input type="email" id="email" placeholder="Введите e-mail" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            cols="30"
+            rows="3"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить!</button>
+      </form>
+    </div>
   </body>
 </html>
